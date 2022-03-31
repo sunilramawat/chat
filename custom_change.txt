@@ -1,0 +1,11 @@
+/var/www/html/material_abeer/vendor/laravel/framework/src/Illuminate/Auth/EloquentUserProvider.php
+
+/var/www/html/material_abeer/vendor/laravel/framework/src/Illuminate/Auth/Authenticatable.php
+
+/var/www/html/material_abeer/public/admin/docs/assets/css/custom.css
+
+/var/www/html/material_abeer/config/session.php
+
+
+/var/www/html/material_abeer/resources/views/admin/login.blade.php
+ 	remember_token 
