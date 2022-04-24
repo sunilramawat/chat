@@ -66,7 +66,6 @@ class ApiController extends Controller
                     $Check = $ApiService->checkemail_phone($data);  
                     $error_msg = new Msg();
                     $msg =  $error_msg->responseMsg($Check->error_code);
-                
 
                     if($Check->error_code == 203 ){
                         //print_r($Check); exit;
@@ -323,7 +322,6 @@ class ApiController extends Controller
     * Required Parameters   => ''                                                          *
     * Created by            => Sunil                                                       *
     ***************************************************************************************/
-
     public function terms(Request $request){
            $result = DB::table('pages')->where('p_status','=',1)->where('id','=',1)->first();
             $error_msg = new Msg();
@@ -357,7 +355,6 @@ class ApiController extends Controller
     * Required Parameters   => email                                                     *
     * Created by            => Sunil                                                     *
     **************************************************************************************/
-
     public function forgotPassword(Request $request){
         $data = $request->all();
         if($request->method() == 'POST'){
@@ -392,7 +389,6 @@ class ApiController extends Controller
     * Required Parameters   => Access Token                                                 *
     * Created by            => Sunil                                                        *
     ***************************************************************************************/
-
     public function category_list(Request $request){
        
         if($request->method() == 'GET'){
@@ -636,6 +632,7 @@ class ApiController extends Controller
                 return $response;
         }
     }
+    
     /**********************************************************************
       API                   => Get and update Profile                     *
     * Description           => It is user for Profile                     *
@@ -675,12 +672,6 @@ class ApiController extends Controller
 
     
     
-
-
-
-
-   
-
 
     /**********************************************************************
     * API                   => Home Page Post list                        *
@@ -978,9 +969,6 @@ class ApiController extends Controller
 
 
 
-
-
-
     /***************************************************************************************
       API                   => Upload Gallery                                              *
     * Description           => It is user for for CRED gallery api                                      *
@@ -1143,9 +1131,6 @@ class ApiController extends Controller
         
     }
 
-
-
-   
 
 
     /************************************************************************************
@@ -1946,7 +1931,6 @@ class ApiController extends Controller
     * Required Parameters   =>                                                            *
     * Created by            => Sunil                                                      *
     ***************************************************************************************/
-    
     public function answer(Request $request){
        
         if($request->method() == 'POST'){
@@ -2151,7 +2135,7 @@ class ApiController extends Controller
             //print_r($Check); exit;
             $error_msg = new Msg();
             $msg =  $error_msg->responseMsg($Check->error_code);
-            i
+            
             if($Check->error_code == 220){
                 
                 $response = [

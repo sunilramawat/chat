@@ -141,7 +141,7 @@ final class Msg{
 	  $msg[648] = 'Query sent successfully.';
 	  $msg[649] = 'User notify.';
 	  $msg[650] = 'Not plan active now.';
-
+	  $msg[651] = 'Incorrect unique Id and passkey.';
 
 
 	    if( isset($msg[$msgId]) ){

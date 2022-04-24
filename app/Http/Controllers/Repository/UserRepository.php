@@ -956,7 +956,7 @@ Class UserRepository extends User{
 		$receiver_name = $receiver_detail['username'];
 		$fcm_token = $receiver_detail['fcm_token'];
 	
-		$message =  $sender_name." has send you message.";
+		$message =  $sender_name." has sent you message.";
 		$data['userid'] = $userId;
 		$data['name'] = $user['username'];
 		$data['message'] = $message;
@@ -1625,6 +1625,7 @@ Class UserRepository extends User{
 		//print_r($arg); exit;
 		$user = User::where('unique_id',$data['unique_id'])
 				->where('is_active_profile',1)
+				->where('user_status',1)
 				->where('id','!=',$arg['id'])
 				->first();
 		//print_r($user); exit;
@@ -2098,13 +2099,13 @@ Class UserRepository extends User{
 
 
 
-			  $CLIENT_ID = '500178777931-57oe6pro6q5oeq8v6vh184qedbba2meo.apps.googleusercontent.com';
+			  $CLIENT_ID = '659600511706-4c4guuub8ba4u9pot4dd10qk2pm29747.apps.googleusercontent.com';
 			  //$CLIENT_ID = '500178777931-57oe6pro6q5oeq8v6vh184qedbba2meo.apps.googleusercontent.com';
 
 			                //'110053402852490647256';
 
-			  $SERVICE_ACCOUNT_NAME = 'firgun@pc-api-5637810868213956066-772.iam.gserviceaccount.com';
-			            $KEY_FILE = app_path().'/pc-api-5637810868213956066-772-8f2f5101f579.p12';
+			  $SERVICE_ACCOUNT_NAME = 'prifir@pc-api-5741470531428325667-740.iam.gserviceaccount.com';
+			            $KEY_FILE = app_path().'/pc-api-5741470531428325667-740-c4be254b0e01.p12';
 
 			            $KEY_PW   = 'notasecret';
 
@@ -2114,7 +2115,7 @@ Class UserRepository extends User{
 
             $client = new \Google_Client();
 
-            $client->setApplicationName("firgun");
+            $client->setApplicationName("Chat");
 
 
 
